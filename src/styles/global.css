@@ -1,0 +1,126 @@
+/* ------------------------------------------
+   Font Imports
+------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------
+   Resets
+------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------
+   Root Variables
+------------------------------------------ */
+:root {
+  --color-off-white: #B6B1A2;
+  --color-dark-grey: #2f2f2f;
+  --color-light-blue: #5A8397;
+  --color-light-red: #A25769;
+  --font-primary: "Montserrat", serif;
+  --font-secondary: "DM Sans", sans-serif;
+}
+
+/* ------------------------------------------
+   Global Styles
+------------------------------------------ */
+body {
+  background-color: #2F2F2F;
+  color: var(--color-off-white);
+  font-family: var(--font-primary);
+  line-height: 1.5;
+}
+
+/* ------------------------------------------
+   Reusable Utility Classes
+------------------------------------------ */
+
+/* Font Classes */
+.text-primary {
+  font-family: var(--font-primary);
+}
+
+.text-secondary {
+  font-family: var(--font-secondary);
+}
+
+.text-offwhite {
+  color: var(--color-off-white);
+}
+
+.text-lightblue {
+  color: var(--color-light-blue);
+}
+
+.text-lightred {
+  color: var(--color-light-red);
+}
+
+
+h6 {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-off-white);
+  font-weight: 400;
+  letter-spacing: 8%;
+  text-align: left;
+  line-height: 130%;
+}
+
+.big-text {
+  font-family: var(--font-secondary);
+  font-size: 10rem;
+  font-weight: 400;
+  color: var(--color-off-white);
+  letter-spacing: 15%;
+  text-align: left;
+  line-height: 110%;
+}

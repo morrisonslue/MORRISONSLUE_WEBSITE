@@ -1,0 +1,58 @@
+.body-container {
+    display: flex;
+    justify-content: center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    width: 80%; 
+    height: 100%; 
+}
+
+
+.left-flexbox {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% * 7 / 16); 
+    height: 100%;
+}
+  
+.right-flexbox {
+    width: calc(100% * 9 / 16); 
+    height: 100%;
+}
+  
+.left-flexbox > div {
+    width: 100%; 
+}
+  
+.left-top {
+    height: calc(100% * 5 / 22);
+}
+  
+.left-second {
+    height: calc(100% * 2 / 22);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+  
+.left-third {
+    height: calc(100% * 9 / 22);
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+}
+  
+.left-fourth {
+    height: calc(100% * 2 / 22);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+  
+.left-bottom {
+    height: calc(100% * 4 / 22);
+}
